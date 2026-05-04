@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy Birthday My Love 💗</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .screen {
+            display: none;
+            animation: fade 1s ease;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: scale(1.05);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .intro {
+            font-size: 40px;
+            line-height: 1.6;
+        }
+        
+        .name {
+            font-size: 46px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .sub {
+            font-size: 26px;
+            color: #ff85b3;
+        }
+        
+        .countdown {
+            font-size: 120px;
+            color: #ff4f8b;
+            text-shadow: 0 0 20px #ff4f8b;
+        }
+        
+        .box {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h2 {
+            color: #ff85b3;
+            margin-bottom: 15px;
+        }
+        
+        .message {
+            font-size: 22px;
+            line-height: 1.9;
+            margin: 15px 0;
+        }
+        
+        button {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(45deg, #ff4f8b, #ff85b3);
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .photos img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .single {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- INTRO -->
+
+        <div id="intro" class="screen show">
+            <div class="intro">
+                <div class="name">Ahmed…</div>
+
+                <div class="sub">the man who changed everything 💗</div>
+            </div>
+        </div>
+
+        <!-- COUNT -->
+
+        <div id="count" class="screen">
+            <div class="countdown" id="num">3</div>
+        </div>
+
+        <!-- 1 -->
+
+        <div id="s1" class="screen">
+            <h2>✈️ Happy Birthday My Favorite Boy Ever 💗</h2>
+
+            <div class="message">
+                Welcome to your special birthday surprises! Get ready for magic! 🎉
+            </div>
+
+            <button onclick="next('s2')">Open Next 🎁</button>
+        </div>
+
+        <!-- 2 -->
+
+        <div id="s2" class="screen">
+            <h2>📸 Our Beautiful Memories Together 💕</h2>
+
+            <div class="photos">
+                <img src="PHO/4.jpeg" />
+
+                <img src="PHO/3.jpeg" />
+
+                <img src="PHO/1.jpg" />
+
+                <img src="PHO/5.jpeg" />
+
+                <img src="PHO/6.jpeg" />
+
+                <img src="PHO/2.jpeg" />
+            </div>
+
+            <button onclick="next('s3')">Next 💝</button>
+        </div>
+
+        <!-- 3 (نفس كلامك بالظبط) -->
+
+        <div id="s3" class="screen">
+            <h2>💌 A Message From Me</h2>
+
+            <div class="message">
+                كل سنة وانت طيب ياروح قلبي وحبيب عمري ❤️<br /> اتمنى ليك دايما كل الحب والسعادة اللي في الدنيا<br /> اجمل واحلى 22 سنة في الدنيا يدوم العمر كله وانت جمبي ❤️‍🩹
+            </div>
+
+            <button onclick="next('s4')">Continue 💖</button>
+        </div>
+
+        <!-- 4 -->
+
+        <div id="s4" class="screen">
+            <img src="PHO/7.jpeg" class="single" />
+
+            <div class="message">
+                Oh my god… 22 already?<br /> My spoiled baby, always my baby 😘❤️‍🔥
+            </div>
+
+            <button onclick="next('s5')">Next 💖</button>
+        </div>
+
+        <!-- 5 -->
+
+        <div id="s5" class="screen">
+            <img src="PHO/8.jpeg" class="single" />
+
+            <div class="message">
+                That's the look that made me fall in love 🫶🏻💗
+            </div>
+
+            <button onclick="next('s6')">Song 🎵</button>
+        </div>
+
+        <!-- 6 -->
+
+        <!-- 6 -->
+        <!-- 6: صفحة اليوتيوب -->
+        <!-- 6: صفحة فيديو اليوتيوب -->
+        <!-- 6: يوتيوب -->
+        <!-- 6 -->
+        <!-- 6 -->
+        <!-- 6 -->
+        <!-- 6: شاشة أغنية اليوتيوب -->
+        <div id="s6" class="screen">
+            <h2>بعترف 💖</h2>
+            <div class="box">
+                <p class="message">أغنية خاصة عشانك.. لازم تسمعها الأول</p>
+                <a href="https://www.youtube.com/watch?v=wgVPqO1Hg2A" target="_blank" style="text-decoration: none;">
+                    <div style="background: #ff4f8b; padding: 20px; border-radius: 15px; color: white; font-weight: bold; margin-bottom: 20px; text-align: center;">
+                        ▶️ اضغط هنا لتشغيل الأغنية
+                    </div>
+                </a>
+            </div>
+            <p style="font-size: 14px; color: #ff85b3; margin-bottom: 10px;">(بعد ما تسمعها ارجع هنا وكمل المفاجأة 😉)</p>
+            <!-- هينقلك لصفحة الكلام s7 -->
+            <button onclick="next('s7')">Next Surprise 🎁</button>
+        </div>
+
+        <!-- 7: صفحة الكلام (اللي طلبتها) - تظهر بعد اليوتيوب -->
+        <div id="s7" class="screen">
+            <h2 style="color: #ff4f8b; font-size: 32px; margin-bottom: 30px;">Finally, Happy Birthday 🥳</h2>
+            <div class="message" style="font-size: 24px; color: #fff; line-height: 1.8; text-align: center;">
+                You're the most beautiful man in the world.<br /> I hope you're always happy in your life.<br /> I hope I'm always one of the reasons for your happiness.<br /><br />
+                <span style="display: block; margin-top: 25px; font-weight: bold;">I love you ❤️</span>
+            </div>
+            <br>
+            <!-- هينقلك للفيديو s8 -->
+            <button onclick="next('s8')">Watch My Video 🎥</button>
+        </div>
+
+        <!-- 8: شاشة الفيديو الشخصي (الختام) -->
+        <div id="s8" class="screen">
+            <h2>A Special Moment For Us 🎥</h2>
+            <div class="box" style="padding: 10px;">
+                <video id="localVideo" controls style="width: 70%; max-width: 400px; border-radius: 15px; border: 2px solid #ff85b3; display: block; margin: 0 auto;">
+                    <source src="Vid/WhatsApp Video 2026-05-04 at 1.43.06 PM.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            <button onclick="stopLocalVideo();">End with Love 💍</button>
+        </div>
+
+        <script>
+            // دالة التنقل الأساسية
+            function next(id) {
+                document.querySelectorAll(".screen").forEach((e) => e.classList.remove("show"));
+                const target = document.getElementById(id);
+                if (target) {
+                    target.classList.add("show");
+                }
+            }
+
+            // دالة إيقاف الفيديو عشان الصوت ميكملش في الصفحة الأخيرة
+            function stopLocalVideo() {
+                var video = document.getElementById('localVideo');
+                if (video) {
+                    video.pause();
+                }
+            }
+
+            // باقي دوال البداية والعد التنازلي
+            setTimeout(() => next("count"), 2500);
+
+            setTimeout(() => {
+                let n = 3;
+                let el = document.getElementById("num");
+                let x = setInterval(() => {
+                    if (el) el.innerHTML = n;
+                    n--;
+                    if (n < 0) {
+                        clearInterval(x);
+                        next("s1");
+                    }
+                }, 1000);
+            }, 5000);
+        </script>
